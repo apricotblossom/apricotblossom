@@ -1,0 +1,53 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+{% block title %}{{ user.username }} Profile{% endblock %}
+{% block body_block %}
+
+
+    <!-- ##### Game Review Area Start ##### -->
+            <section class="game-review-area section-padding-100" style="background-image: url({% static 'img/bg-img/23.jpg' %})">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                            <!-- *** Single Review Area *** -->
+                    <div class="single-game-review-area d-flex flex-wrap mb-30">
+                        <div class="game-thumbnail">
+                            {% if userprofile.picture %}
+                                <img src="{{ MEDIA_URL }}{{userprofile.picture }}" width="300" height="300" alt="{{user.username}}" />
+                            {% else %}
+                                <img src="http://lorempixel.com/300/300/people/" img width="300" height="300" alt="{{user.username}}"/>
+                            {% endif %}
+                        </div>
+                        <div class="game-content">
+                            <span class="game-tag"></span>
+                                <div class="page-header">
+                                    <h1>{{selecteduser.username}} Profile</h1>
+                                </div>
+{#                            <div class="game-meta">#}
+{#                                <a href="https://blog.counter-strike.net/" class="game-date">August 21, 2012</a>#}
+{#                                <a href="#" class="game-comments">6 Comments</a>#}
+{#                            </div>#}
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                                <div id="profile_data">
+                                    {% if selecteduser.username == user.username %}
+                                        <form method="post" action="." enctype="multipart/form-data">
+                                            {% csrf_token %}
+                                           {{ form.as_p }} <br />
+                                            <button style="float: left;text-align: center" class="button" type="submit" value="Update">Update</button>
+                                        </form>
+                                    {% else %}
+                                    <p><strong>Email:</strong>{{selecteduser.email}}</p>
+                                    <p><strong>Website:</strong> <a href="{{userprofile.website}}">{{userprofile.website}}</a></p>
+                                    <p><strong>Age:</strong>{{userprofile.age}}</p>
+                                    {% endif %}
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

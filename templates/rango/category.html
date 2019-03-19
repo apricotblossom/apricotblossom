@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+    button {
+  width: 130px;
+  height: 40px;
+  background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  border-bottom: 4px solid #2b8bc6;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-size: 15px;
+  text-align: left;
+  text-indent: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+  cursor: pointer;
+
+/* Just for presentation */
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+button:active {
+  box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
+  top: 1px;
+}
+
+button:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: 20px solid #187dbc;
+  border-bottom: 20px solid #187dbc;
+  border-left: 16px solid transparent;
+  border-right: 20px solid #187dbc;
+  position: absolute;
+  opacity: 0.6;
+  right: 0;
+  top: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+h1 {
+  font: 400 16px 'Open Sans';
+  text-transform: uppercase;
+  color: #999;
+  text-shadow: 1px 1px 1px #fff;
+  margin-bottom: 30px;
+}
+    </style>
+        <!-- ##### Breadcrumb Area Start ##### -->
+     {% if category %} 
+    <div class="breadcrumb-area bg-img bg-overlay" style="background-image: url({% static 'img/bg-img/27.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <!-- Breadcrumb Text -->
+                <div class="col-12">
+                    <div class="breadcrumb-text">
+                        <h2>{{ category.name }}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcrumb Area End ##### -->
+
+    <!-- ##### Single Game Review Area Start ##### -->
+    <section class="single-game-review-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="single-game-img-slides">
+                        <div id="gameSlides" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="{{ category.pictureurl}}1.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{ category.pictureurl}}2.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{ category.pictureurl}}3.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{ category.pictureurl}}4.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{ category.pictureurl}}5.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{ category.pictureurl}}6.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{ category.pictureurl}}7.jpg" alt="">
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#gameSlides" data-slide-to="0" class="active" style="background-image: url({{ category.pictureurl}}1.jpg);"></li>
+                                <li data-target="#gameSlides" data-slide-to="1" style="background-image: url({{ category.pictureurl}}2.jpg)"></li>
+                                <li data-target="#gameSlides" data-slide-to="2" style="background-image: url({{ category.pictureurl}}3.jpg);"></li>
+                                <li data-target="#gameSlides" data-slide-to="3" style="background-image: url({{ category.pictureurl}}4.jpg);"></li>
+                                <li data-target="#gameSlides" data-slide-to="4" style="background-image: url({{ category.pictureurl}}5.jpg);"></li>
+                                <li data-target="#gameSlides" data-slide-to="5" style="background-image: url({{ category.pictureurl}}6.jpg);"></li>
+                                <li data-target="#gameSlides" data-slide-to="6" style="background-image: url({{ category.pictureurl}}7.jpg);"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <!-- *** Review Area *** -->
+                <div class="col-12 col-md-6">
+                    <div class="single-game-review-area style-2 mt-70">
+                        <div class="game-content">
+                            <span class="game-tag">{{ category.cats }}</span>
+                            <a href="#" class="game-title">{{ category.name }}</a>
+                            <div class="game-meta">
+                                <a href="#" class="game-date">{{ category.releasedate }}</a>
+                                <a href="#" class="game-comments">{{ page.total }}comments</a>
+                            </div>
+                            <p>{{ category.review }}</p>
+                            <!-- Download & Rating Area -->
+                            <div class="download-rating-area">
+                                <div class="download-area">
+                                    <a href="{{ category.pcurl }}"><img src="{% static 'img/core-img/windows.png' %}" alt=""></a>
+                                    <a href="{{ category.andurl }}"><img src="{% static 'img/core-img/app-store.png' %}" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="{{ category.iosurl }}"><img src="{% static 'img/core-img/google-play.png' %}" alt=""></a>
+                                </div>
+                                <div class="rating-area mt-30">
+                                    <h3>8.6</h3>
+                                    <div class="stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- *** Barfiller Area *** -->
+                <div class="col-12 col-md-6">
+                    <div class="egames-barfiller">
+                        <!-- Single Barfiller -->
+                    <div>
+                        <br>
+                        <h4>Comments for {{category.name}}</h4>
+                    </div>
+                        <div>
+
+                            <p>
+                            {% if pages %}
+                            <ul>
+                                {% for page in pages %}
+                                <li class="list-group-item">
+                                    <strong>Username: </strong><span style="color: #FFA500">{{page.username}}</span><br>
+                                    <strong>Comments: </strong><span style="color: #FF8C69">{{ page.message }}</span><br>
+                                    <strong>Rating: </strong><span style="color: #FF6347">{{page.evaluation}}</span>
+                                </li>
+                                {% endfor %}
+                                </ul>
+                            {% else %}
+                                <strong>There are no comments now.</strong>
+                            {% endif %}
+		                    <br />
+                                <div class="holder">
+                                    <a href="{% url 'add_page' category.slug %}"><button style="float: left" class="button">Add Comment</button></a>
+                                </div>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Single Game Review Area End ##### -->
+    {% endif %}
+{% endblock %}

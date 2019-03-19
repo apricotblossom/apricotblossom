@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Login Page</title>
+
+    <!-- XHL con -->
+    <link rel="icon" href="{% static 'img/core-img/xhl.ico' %}">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'stylelogin.css' %}"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+
+{% if user.is_active %}
+<script language="javascript" type="text/javascript">
+                window.location.href="{% url 'index' %}"
+</script>
+
+{% else %}
+
+  <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>Apricot<span>Blossom</span></div><br>
+		     <div class="col-md-12">
+
+                <div class="social-buttons">
+                    <!--<button type="button" class="btn btn-fb" onclick="window.location.href='{% url 'social:begin' 'twitter' %}'">-->
+                         <!--Login via <span class="fa fa-facebook"></span> Twitter-->
+                    <!--</button>-->
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="{% static 'img/core-img/twitter.png' %}" width="100" height="100" alt=""><br>
+                    <a href="{% url 'social:begin' 'twitter' %}"><img src="{% static 'img/core-img/twitterbird.png' %}" width="100" height="100" alt=""></a>
+                </div>
+            </div>
+        </div>
+		<br>
+  <form id="login_form" method="post" action="{% url 'login' %}">
+      {% csrf_token %}
+		<div class="login">
+				<input type="text" placeholder="username" name="username"><br>
+				<input type="password" placeholder="password" name="password"><br>
+				<a href="{% url 'index' %}">
+					<input type="submit" value="Login"></a>
+            <div class="choose"><label class="radio">Do not have an account? </label><br></div>
+            <a href="{% url 'register' %}"><input type="button" value="Register"></a>
+		</div>
+      </form>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+{% endif %}
+
+</body>
+
+</html>
+
+

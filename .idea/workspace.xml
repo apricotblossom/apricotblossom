@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1ddd8f25-f718-4bb7-b9d8-66db32460eb9" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rango/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6500">
+              <caret line="444" selection-start-line="444" selection-end-line="444" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/rango/game-review.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
+              <folding>
+                <element signature="e#3138#3144#0" expanded="true" />
+                <element signature="e#3144#3150#0" expanded="true" />
+                <element signature="e#3150#3156#0" expanded="true" />
+                <element signature="e#3156#3162#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/rango/game-review2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="63" column="61" selection-start-line="63" selection-start-column="61" selection-end-line="63" selection-end-column="61" />
+              <folding>
+                <element signature="e#3307#3313#0" expanded="true" />
+                <element signature="e#3313#3319#0" expanded="true" />
+                <element signature="e#3319#3325#0" expanded="true" />
+                <element signature="e#3325#3331#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/rango/game-review3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="63" column="61" selection-start-line="63" selection-start-column="61" selection-end-line="63" selection-end-column="61" />
+              <folding>
+                <element signature="e#3181#3187#0" expanded="true" />
+                <element signature="e#3187#3193#0" expanded="true" />
+                <element signature="e#3193#3199#0" expanded="true" />
+                <element signature="e#3199#3205#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/rango/adultgamenews.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2617">
+              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/rango/conanexiles.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="671">
+              <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/rango/ps4news.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="879">
+              <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/rango/marionews.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="66" column="51" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/rango/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="39" column="44" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="44" />
+              <folding>
+                <element signature="e#4789#4795#0" expanded="true" />
+                <element signature="e#4795#4801#0" expanded="true" />
+                <element signature="e#4801#4807#0" expanded="true" />
+                <element signature="e#4807#4813#0" expanded="true" />
+                <element signature="e#4813#4819#0" expanded="true" />
+                <element signature="e#4819#4825#0" expanded="true" />
+                <element signature="e#4825#4831#0" expanded="true" />
+                <element signature="e#4831#4837#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/rango/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="30" selection-start-line="26" selection-end-line="26" selection-end-column="30" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>html</find>
+      <find>src</find>
+      <find>login</find>
+      <find>url</find>
+      <find>egame</find>
+      <find>single</find>
+      <find>style.css</find>
+      <find>background</find>
+      <find>classynav</find>
+      <find>logout</find>
+      <find>button</find>
+      <find>page_list</find>
+      <find>active</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/static/css/classy-nav.css" />
+        <option value="$PROJECT_DIR$/templates/rango/index.html" />
+        <option value="$PROJECT_DIR$/templates/rango/deadbydaylight.html" />
+        <option value="$PROJECT_DIR$/templates/rango/post.html" />
+        <option value="$PROJECT_DIR$/templates/rango/single-game-review.html" />
+        <option value="$PROJECT_DIR$/templates/rango/grandtheftautovreview.html" />
+        <option value="$PROJECT_DIR$/templates/rango/reddeadredemptionⅡ.html" />
+        <option value="$PROJECT_DIR$/templates/rango/devilmaycryvreview.html" />
+        <option value="$PROJECT_DIR$/templates/rango/minecraftreview.html" />
+        <option value="$PROJECT_DIR$/templates/rango/adultgamereview.html" />
+        <option value="$PROJECT_DIR$/templates/rango/callofdutyblackops4review.html" />
+        <option value="$PROJECT_DIR$/templates/rango/reddeadredemptionⅡreview.html" />
+        <option value="$PROJECT_DIR$/templates/rango/monsterhunterworldreview.html" />
+        <option value="$PROJECT_DIR$/templates/rango/nba2k19review.html" />
+        <option value="$PROJECT_DIR$/templates/rango/theinvisibleguardianreview.html" />
+        <option value="$PROJECT_DIR$/templates/rango/pokémongoreview.html" />
+        <option value="$PROJECT_DIR$/templates/rango/brawlstarsreview.html" />
+        <option value="$PROJECT_DIR$/templates/rango/clashroyalereview.html" />
+        <option value="$PROJECT_DIR$/templates/rango/boombeachreview.html" />
+        <option value="$PROJECT_DIR$/templates/rango/clashofclansreview.html" />
+        <option value="$PROJECT_DIR$/templates/rango/dota2review.html" />
+        <option value="$PROJECT_DIR$/templates/rango/senrankaguraburstrenewal.html" />
+        <option value="$PROJECT_DIR$/templates/rango/gta6.html" />
+        <option value="$PROJECT_DIR$/templates/rango/deadoralive6.html" />
+        <option value="$PROJECT_DIR$/templates/rango/search.html" />
+        <option value="$PROJECT_DIR$/rango/models.py" />
+        <option value="$PROJECT_DIR$/templates/rango/negligeelovestoriesreview.html" />
+        <option value="$PROJECT_DIR$/templates/rango/adultgamenews.html" />
+        <option value="$PROJECT_DIR$/templates/rango/adult-game-review.html" />
+        <option value="$PROJECT_DIR$/templates/rango/new_category.html" />
+        <option value="$PROJECT_DIR$/templates/rango/category.html" />
+        <option value="$PROJECT_DIR$/templates/rango/add_page.html" />
+        <option value="$PROJECT_DIR$/rango/forms.py" />
+        <option value="$PROJECT_DIR$/tango_with_django_project/settings.py" />
+        <option value="$PROJECT_DIR$/tango_with_django_project/urls.py" />
+        <option value="$PROJECT_DIR$/rango/urls.py" />
+        <option value="$PROJECT_DIR$/rango/views.py" />
+        <option value="$PROJECT_DIR$/static/style.css" />
+        <option value="$PROJECT_DIR$/templates/rango/base.html" />
+        <option value="$PROJECT_DIR$/templates/rango/profile.html" />
+        <option value="$PROJECT_DIR$/static/style1.css" />
+        <option value="$PROJECT_DIR$/static/stylelogin.css" />
+        <option value="$PROJECT_DIR$/templates/rango/register.html" />
+        <option value="$PROJECT_DIR$/static/styleregister.css" />
+        <option value="$PROJECT_DIR$/templates/rango/login.html" />
+        <option value="$PROJECT_DIR$/templates/rango/game-review.html" />
+        <option value="$PROJECT_DIR$/templates/rango/game-review2.html" />
+        <option value="$PROJECT_DIR$/templates/rango/game-review3.html" />
+        <option value="$PROJECT_DIR$/templates/rango/conanexiles.html" />
+        <option value="$PROJECT_DIR$/templates/rango/ps4news.html" />
+        <option value="$PROJECT_DIR$/templates/rango/marionews.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="721" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="abpfnew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abpfnew" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="tango_with_django_project-master 2" type="Python.DjangoServer" factoryName="Django server">
+      <module name="tango_with_django_project-master 2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="tango_with_django_project.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ddd8f25-f718-4bb7-b9d8-66db32460eb9" name="Default Changelist" comment="" />
+      <created>1551914333278</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551914333278</updated>
+      <workItem from="1551914337383" duration="5841000" />
+      <workItem from="1551992823721" duration="12032000" />
+      <workItem from="1552172989540" duration="872000" />
+      <workItem from="1552173943494" duration="1158000" />
+      <workItem from="1552175726665" duration="480000" />
+      <workItem from="1552176254521" duration="379000" />
+      <workItem from="1552176737135" duration="555000" />
+      <workItem from="1552177442056" duration="260000" />
+      <workItem from="1552177723542" duration="1743000" />
+      <workItem from="1552231866675" duration="47394000" />
+      <workItem from="1552406085869" duration="2991000" />
+      <workItem from="1552442234622" duration="15000" />
+      <workItem from="1552848117418" duration="12057000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="85777000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.842" visible="true" weight="0.24146147" />
+      <window_info id="Structure" order="1" sideWeight="0.158" side_tool="true" weight="0.26752505" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32931727" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50143063" side_tool="true" weight="0.32931727" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4985694" visible="true" weight="0.29863015" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32931727" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.842" visible="true" weight="0.24146147" />
+      <window_info id="Structure" order="1" sideWeight="0.158" side_tool="true" weight="0.26752505" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32931727" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50143063" side_tool="true" weight="0.32931727" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4985694" visible="true" weight="0.29863015" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32931727" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/rango/minecraftreview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <element signature="e#196#260#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/theinvisibleguardianreview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="82" column="195" selection-start-line="82" selection-start-column="195" selection-end-line="82" selection-end-column="195" />
+          <folding>
+            <element signature="e#2912#2999#0#HTML" expanded="true" />
+            <element signature="e#3086#3172#0#HTML" expanded="true" />
+            <element signature="e#3259#3346#0#HTML" expanded="true" />
+            <element signature="e#3433#3520#0#HTML" expanded="true" />
+            <element signature="e#3607#3694#0#HTML" expanded="true" />
+            <element signature="e#3781#3868#0#HTML" expanded="true" />
+            <element signature="e#3955#4042#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/nba2k19review.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="78" selection-start-line="78" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/pokémongoreview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="81" column="43" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
+          <folding>
+            <element signature="e#2914#3001#0#HTML" expanded="true" />
+            <element signature="e#3088#3174#0#HTML" expanded="true" />
+            <element signature="e#3261#3348#0#HTML" expanded="true" />
+            <element signature="e#3435#3522#0#HTML" expanded="true" />
+            <element signature="e#3609#3696#0#HTML" expanded="true" />
+            <element signature="e#3783#3870#0#HTML" expanded="true" />
+            <element signature="e#3957#4044#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/brawlstarsreview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="e#196#260#0#HTML" expanded="true" />
+            <element signature="e#2915#3002#0#HTML" expanded="true" />
+            <element signature="e#3089#3175#0#HTML" expanded="true" />
+            <element signature="e#3262#3349#0#HTML" expanded="true" />
+            <element signature="e#3436#3523#0#HTML" expanded="true" />
+            <element signature="e#3610#3697#0#HTML" expanded="true" />
+            <element signature="e#3784#3871#0#HTML" expanded="true" />
+            <element signature="e#3958#4045#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/clashroyalereview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-164">
+          <caret line="71" column="71" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="71" />
+          <folding>
+            <element signature="e#2916#3003#0#HTML" expanded="true" />
+            <element signature="e#3090#3176#0#HTML" expanded="true" />
+            <element signature="e#3263#3350#0#HTML" expanded="true" />
+            <element signature="e#3437#3524#0#HTML" expanded="true" />
+            <element signature="e#3611#3698#0#HTML" expanded="true" />
+            <element signature="e#3785#3872#0#HTML" expanded="true" />
+            <element signature="e#3959#4046#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/clashofclansreview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="78" column="74" selection-start-line="78" selection-start-column="74" selection-end-line="78" selection-end-column="74" />
+          <folding>
+            <element signature="e#2918#3005#0#HTML" expanded="true" />
+            <element signature="e#3092#3178#0#HTML" expanded="true" />
+            <element signature="e#3265#3352#0#HTML" expanded="true" />
+            <element signature="e#3439#3526#0#HTML" expanded="true" />
+            <element signature="e#3613#3700#0#HTML" expanded="true" />
+            <element signature="e#3787#3874#0#HTML" expanded="true" />
+            <element signature="e#3961#4048#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/dota2review.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="78" selection-start-line="78" selection-end-line="79" />
+          <folding>
+            <element signature="e#2734#2795#0#HTML" expanded="true" />
+            <element signature="e#2882#2942#0#HTML" expanded="true" />
+            <element signature="e#3029#3090#0#HTML" expanded="true" />
+            <element signature="e#3177#3238#0#HTML" expanded="true" />
+            <element signature="e#3325#3386#0#HTML" expanded="true" />
+            <element signature="e#3473#3534#0#HTML" expanded="true" />
+            <element signature="e#3621#3682#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/deadbydaylight.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="50" lean-forward="true" selection-end-line="273" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="46" lean-forward="true" selection-end-line="328" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/senrankaguraburstrenewal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="48" column="44" lean-forward="true" selection-end-line="273" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/gta6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="236" column="34" selection-end-line="278" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/deadoralive6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="29" column="107" selection-start-line="29" selection-start-column="107" selection-end-line="29" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="42" column="55" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/MHW/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rango/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/Grand Theft Auto V Review/120394.jpg" />
+    <entry file="file://$PROJECT_DIR$/templates/rango/grandtheftautovreview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="75" column="18" selection-start-line="74" selection-start-column="31" selection-end-line="75" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/reddeadredemptionⅡreview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="75" column="1" lean-forward="true" selection-start-line="74" selection-start-column="31" selection-end-line="75" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/negligeelovestoriesreview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="76" column="1" selection-start-line="74" selection-start-column="31" selection-end-line="76" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/callofdutyblackops4review.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-103">
+          <caret line="78" column="90" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/single-game-review.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="103" column="44" selection-start-line="103" selection-start-column="44" selection-end-line="103" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/new_category.html" />
+    <entry file="file://$PROJECT_DIR$/templates/rango/monsterhunterworldreview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-577">
+          <caret line="71" column="148" selection-start-line="71" selection-start-column="148" selection-end-line="71" selection-end-column="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rango/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="26" column="98" lean-forward="true" selection-start-line="26" selection-start-column="98" selection-end-line="26" selection-end-column="98" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/adult-game-review.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="179" column="124" selection-start-line="179" selection-start-column="81" selection-end-line="179" selection-end-column="124" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/add_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="337" column="44" selection-start-line="337" selection-start-column="44" selection-end-line="337" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tango_with_django_project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="150" column="26" selection-start-line="150" selection-start-column="26" selection-end-line="150" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rango/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="50" column="63" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tango_with_django_project/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding>
+            <element signature="e#659#691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/boombeachreview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/bg-img/registerbg.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/style1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-595">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/stylelogin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-955">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21228">
+          <caret line="1555" selection-start-line="1555" selection-end-line="1555" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/styleregister.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8070">
+          <caret line="538" column="99" selection-start-line="538" selection-start-column="99" selection-end-line="538" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="30" selection-start-line="26" selection-end-line="26" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rango/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6500">
+          <caret line="444" selection-start-line="444" selection-end-line="444" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="39" column="44" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="44" />
+          <folding>
+            <element signature="e#4789#4795#0" expanded="true" />
+            <element signature="e#4795#4801#0" expanded="true" />
+            <element signature="e#4801#4807#0" expanded="true" />
+            <element signature="e#4807#4813#0" expanded="true" />
+            <element signature="e#4813#4819#0" expanded="true" />
+            <element signature="e#4819#4825#0" expanded="true" />
+            <element signature="e#4825#4831#0" expanded="true" />
+            <element signature="e#4831#4837#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/game-review.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
+          <folding>
+            <element signature="e#3138#3144#0" expanded="true" />
+            <element signature="e#3144#3150#0" expanded="true" />
+            <element signature="e#3150#3156#0" expanded="true" />
+            <element signature="e#3156#3162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/game-review2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="63" column="61" selection-start-line="63" selection-start-column="61" selection-end-line="63" selection-end-column="61" />
+          <folding>
+            <element signature="e#3307#3313#0" expanded="true" />
+            <element signature="e#3313#3319#0" expanded="true" />
+            <element signature="e#3319#3325#0" expanded="true" />
+            <element signature="e#3325#3331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/game-review3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="63" column="61" selection-start-line="63" selection-start-column="61" selection-end-line="63" selection-end-column="61" />
+          <folding>
+            <element signature="e#3181#3187#0" expanded="true" />
+            <element signature="e#3187#3193#0" expanded="true" />
+            <element signature="e#3193#3199#0" expanded="true" />
+            <element signature="e#3199#3205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/adultgamenews.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2617">
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/conanexiles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/ps4news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="879">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/rango/marionews.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="66" column="51" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

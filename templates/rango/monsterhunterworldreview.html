@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+        <!-- ##### Breadcrumb Area Start ##### -->
+    <div class="breadcrumb-area bg-img bg-overlay" style="background-image: url({% static 'img/bg-img/27.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <!-- Breadcrumb Text -->
+                <div class="col-12">
+                    <div class="breadcrumb-text">
+                        <h2>MONSTER HUNTER：WORLD</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcrumb Area End ##### -->
+
+    <!-- ##### Single Game Review Area Start ##### -->
+    <section class="single-game-review-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="single-game-img-slides">
+                        <div id="gameSlides" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="{% static 'img/MHW/1.png' %}" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{% static 'img/MHW/2.png' %}" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{% static 'img/MHW/3.png' %}" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{% static 'img/MHW/4.png' %}" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{% static 'img/MHW/5.png' %}" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{% static 'img/MHW/6.png' %}" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{% static 'img/MHW/7.png' %}" alt="">
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#gameSlides" data-slide-to="0" class="active" style="background-image: url({% static 'img/MHW/1.png' %});"></li>
+                                <li data-target="#gameSlides" data-slide-to="1" style="background-image: url({% static 'img/MHW/2.png' %})"></li>
+                                <li data-target="#gameSlides" data-slide-to="2" style="background-image: url({% static 'img/MHW/3.png' %});"></li>
+                                <li data-target="#gameSlides" data-slide-to="3" style="background-image: url({% static 'img/MHW/4.png' %});"></li>
+                                <li data-target="#gameSlides" data-slide-to="4" style="background-image: url({% static 'img/MHW/5.png' %});"></li>
+                                <li data-target="#gameSlides" data-slide-to="5" style="background-image: url({% static 'img/MHW/6.png' %});"></li>
+                                <li data-target="#gameSlides" data-slide-to="6" style="background-image: url({% static 'img/MHW/7.png' %});"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <!-- *** Review Area *** -->
+                <div class="col-12 col-md-6">
+                    <div class="single-game-review-area style-2 mt-70">
+                        <div class="game-content">
+                            <span class="game-tag">Action</span>
+                            <a href="https://blog.counter-strike.net/" class="game-title">MONSTER HUNTER：WORLD</a>
+                            <div class="game-meta">
+                                <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" class="game-date">10th August, 2018</a>
+                                <a href="#" class="game-comments">6 Comments</a>
+                            </div>
+                            <p>Whether or not it's the best, this is certainly the most audacious Monster Hunter game. World takes a dramatic leap into a look, feel, and size that feels truly new, simultaneously staying true to the series’ ideals by maintaining the addictive loop of combat, intimidating monsters and meaningful upgrades that fans love. The sheer depth and commitment required is still intense, but it clearly isn’t Capcom’s aim to court a casual crowd. This is as all-consuming and incredible a ride as ever..</p>
+                            <!-- Download & Rating Area -->
+                            <div class="download-rating-area">
+                                <div class="download-area">
+                                    <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"><img src="{% static 'img/core-img/windows.png' %}" alt="">Link to steam to download</a>
+                                </div>
+                                <div class="rating-area mt-30">
+                                    <h3>8.6</h3>
+                                    <div class="stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- *** Barfiller Area *** -->
+                <div class="col-12 col-md-6">
+                    <div class="egames-barfiller">
+                        <!-- Single Barfiller -->
+                        <div class="single-barfiller-area">
+                            <div id="bar1" class="barfiller">
+                                <span class="tip"></span>
+                                <span class="fill" data-percentage="95"></span>
+                                <p>Game Price</p>
+                            </div>
+                        </div>
+                        <!-- Single Barfiller -->
+                        <div class="single-barfiller-area">
+                            <div id="bar2" class="barfiller">
+                                <span class="tip"></span>
+                                <span class="fill" data-percentage="81"></span>
+                                <p>Positive</p>
+                            </div>
+                        </div>
+                        <!-- Single Barfiller -->
+                        <div class="single-barfiller-area">
+                            <div id="bar3" class="barfiller">
+                                <span class="tip"></span>
+                                <span class="fill" data-percentage="24"></span>
+                                <p>Mixed</p>
+                            </div>
+                        </div>
+                        <!-- Single Barfiller -->
+                        <div class="single-barfiller-area">
+                            <div id="bar4" class="barfiller">
+                                <span class="tip"></span>
+                                <span class="fill" data-percentage="31"></span>
+                                <p>Negative</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Single Game Review Area End ##### -->
+{% endblock %}

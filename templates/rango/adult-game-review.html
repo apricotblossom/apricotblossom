@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+  <!-- ##### Breadcrumb Area Start ##### -->
+    <div class="breadcrumb-area bg-img bg-overlay" style="background-image: url({% static 'img/bg-img/27.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <!-- Breadcrumb Text -->
+                <div class="col-12">
+                    <div class="breadcrumb-text">
+                        <h2>Game Review List</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- ##### Breadcrumb Area End ##### -->
+{% if categories %}
+     {% for category in categories %}
+    <!-- ##### Game Review Area Start ##### -->
+    <section class="game-review-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- *** Single Review Area *** -->
+                    <div class="single-game-review-area d-flex flex-wrap mb-30">
+                        <div class="game-thumbnail">
+                            <video width="100%" height="100%" autoplay muted loop>
+                                        <source src="{{ category.yturl }}" type="video/mp4"/>
+                                    </video>
+                        </div>
+                        <div class="game-content">
+                            <span class="game-tag">{{ category.cats }}</span>
+                            <a href="{% url 'show_category' category.slug %}" class="game-title">{{ category.name }}</a>
+                            <div class="game-meta">
+                                <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" class="game-date">{{ category.releasedate }}</a>
+                                <a href="#" class="game-comments">4 Comments</a>
+                            </div>
+                            <p>{{ category.introduction }}</p>
+
+                            <div class="download-rating-area d-flex align-items-center justify-content-between">
+                                <div class="download-area">
+                                    <a href="{{ category.pcurl }}"><img src="{% static 'img/core-img/windows.png' %}" alt=""></a>
+                                    <a href="{{ category.andurl }}"><img src="{% static 'img/core-img/google-play.png' %}" alt=""></a>
+                                    <a href="{{ category.iosurl }}"><img src="{% static 'img/core-img/app-store.png' %}" alt=""></a>
+
+                                </div>
+                                <div class="rating-area text-center">
+                                    <h3>8.6</h3>
+                                    <div class="stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% endfor %}
+    {% endif %}
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+    <script
+    src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js">
+    </script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script
+    src= "http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js">
+    </script>
+    <script src="{% static 'js/rango-ajax.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- ##### Game Review Area End ##### -->
+{% endblock %}

@@ -1,0 +1,44 @@
+ 
+ {% load staticfiles %}
+ <html>
+
+ <head>
+ <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Register Page</title>
+
+    <!-- XHL con -->
+    <link rel="icon" href="{% static 'img/core-img/xhl.ico' %}">
+    <link rel="stylesheet" href="{% static 'styleregister.css' %}"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+ </head>
+ <body >
+ <div class="div_text_shadow">
+ <h1>Register for Rango</h1>
+ {% if registered %}
+ <span>Rango says: <strong>thank you for registering!</strong></span>
+ <a href="{% url 'index' %}">Return to the homepage.</a><br />
+ {% else %}
+ Rango says: <strong>register here!</strong><br />
+
+ <form id="user_form" method="post" action="{% url 'register' %}"
+ enctype="multipart/form-data">
+ {% csrf_token %}
+
+ {{ user_form.as_p }}
+ {{ profile_form.as_p }}
+
+ <input type="submit" name="submit" value="Register" />
+</form>
+ {% endif %}
+ </div>
+
+ </body>
+ </html>

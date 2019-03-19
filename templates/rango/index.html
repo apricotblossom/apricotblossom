@@ -1,0 +1,606 @@
+<!DOCTYPE html> 
+{% extends 'rango/base.html' %}
+{% load staticfiles %} 
+{% block title_block %} 
+Index 
+{% endblock %} 
+{% block body_block %} 
+    <!-- ##### Hero Area Start ##### -->
+<div class="hero-area">
+    <!-- Hero Post Slides -->
+    <div class="hero-post-slides owl-carousel">
+
+        <!-- Single Slide -->
+        <div class="single-slide bg-img bg-overlay" style="background-image: url({% static 'img/bg-img/1.jpg' %});">
+            <!-- Blog Content -->
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 col-lg-9">
+                        <div class="blog-content" data-animation="fadeInUp" data-delay="100ms">
+                            <h2 data-animation="fadeInUp" data-delay="400ms">Assassin's Creed IV: Black Flag</h2>
+                            <p data-animation="fadeInUp" data-delay="700ms">The lawless Caribbean, 1715, discover the fullest Assassins Creed world ever created. Stand among legendary pirates such as Blackbeard and Calico Jack.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="single-slide bg-img bg-overlay" style="background-image: url({% static 'img/bg-img/2.jpg' %});">
+            <!-- Blog Content -->
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 col-lg-9">
+                        <div class="blog-content" data-animation="fadeInUp" data-delay="100ms">
+                            <h2 data-animation="fadeInUp" data-delay="400ms">Counter-Strike: Global Offensive</h2>
+                            <p data-animation="fadeInUp" data-delay="700ms">Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago. CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of the classic CS content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- ##### Hero Area End ##### -->
+
+
+<!-- ##### Monthly Picks Area Start ##### -->
+<section class="monthly-picks-area section-padding-100 bg-pattern">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="left-right-pattern"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Title -->
+                <h2 class="section-title mb-70 wow fadeInUp" data-wow-delay="100ms">Monthly Selection</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs wow fadeInUp" data-wow-delay="300ms" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="popular-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="true">Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="latest-tab" data-toggle="tab" href="#latest" role="tab" aria-controls="latest" aria-selected="false">Latest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="editor-tab" data-toggle="tab" href="#editor" role="tab" aria-controls="editor" aria-selected="false">Editor’s Top5</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content wow fadeInUp" data-wow-delay="500ms" id="myTabContent">
+        <div class="tab-pane fade show active" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+            <!-- Popular Games Slideshow -->
+            <div class="popular-games-slideshow owl-carousel">
+
+                <!-- Single Games -->
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/50.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">Grand Theft Auto V</a>
+                        <div class="meta-data">
+                            <a href="#">User: 8.6/10</a>
+                            <a href="#">Action</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Games -->
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/51.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">The Elder Scrolls V：Skyrim</a>
+                        <div class="meta-data">
+                            <a href="#">User: 9.1/10</a>
+                            <a href="#">Adventure</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Games -->
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/52.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">Fallout 4</a>
+                        <div class="meta-data">
+                            <a href="#">User: 8.4/10</a>
+                            <a href="#">RolePlay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Games -->
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/53.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">Rainbow Six</a>
+                        <div class="meta-data">
+                            <a href="#">User: 8.8/10</a>
+                            <a href="#">Shooting</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Games -->
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/54.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">Counter-Strike：Global Offensive</a>
+                        <div class="meta-data">
+                            <a href="#">User: 9.4/10</a>
+                            <a href="#">Shooting</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Games -->
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/55.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">Assassin's Creed IV：Black Flag</a>
+                        <div class="meta-data">
+                            <a href="#">User: 8.2/10</a>
+                            <a href="#">Action</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Games -->
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/56.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">Tropico6</a>
+                        <div class="meta-data">
+                            <a href="#">User: 7.8/10</a>
+                            <a href="#">Economic simulation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Games -->
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/57.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">Diablo3</a>
+                        <div class="meta-data">
+                            <a href="#">User: 8.9/10</a>
+                            <a href="#">Role Play Gaming</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-pane fade" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+            <!-- Latest Games Slideshow -->
+            <div class="latest-games-slideshow owl-carousel">
+
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/60.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">Anthem</a>
+                        <div class="meta-data">
+                            <a href="#">User: 6.3/10</a>
+                            <a href="#">Role Play Game</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Single Games -->
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/57.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">Diablo3</a>
+                        <div class="meta-data">
+                            <a href="#">User: 8.9/10</a>
+                            <a href="#">Role Play Gaming</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Games -->
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/56.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">Tropico6</a>
+                        <div class="meta-data">
+                            <a href="#">User: 7.3/10</a>
+                            <a href="#">Economic simulation</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/58.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">Red Dead: RedemptionⅡ</a>
+                        <div class="meta-data">
+                            <a href="#">User: 9.4/10</a>
+                            <a href="#">Adventure</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/59.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">MONSTER HUNTER：WORLD</a>
+                        <div class="meta-data">
+                            <a href="#">User: 9.2/10</a>
+                            <a href="#">Adventure</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="editor" role="tabpanel" aria-labelledby="editor-tab">
+            <!-- Editor Games Slideshow -->
+            <div class="editor-games-slideshow owl-carousel">
+
+                <!-- Single Games -->
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/54.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">Counter-Strike：Global Offensive</a>
+                        <div class="meta-data">
+                            <a href="#">User: 9.4/10</a>
+                            <a href="#">Shooting</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/58.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">Red Dead: RedemptionⅡ</a>
+                        <div class="meta-data">
+                            <a href="#">User: 9.4/10</a>
+                            <a href="#">Adventure</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/59.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">MONSTER HUNTER：WORLD</a>
+                        <div class="meta-data">
+                            <a href="#">User: 9.2/10</a>
+                            <a href="#">Adventure</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/51.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">The Elder Scrolls V：Skyrim</a>
+                        <div class="meta-data">
+                            <a href="#">User: 9.1/10</a>
+                            <a href="#">Adventure</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="single-games-slide">
+                    <img src="{% static 'img/bg-img/57.jpg' %}" alt="">
+                    <div class="slide-text">
+                        <a href="#" class="game-title">Diablo3</a>
+                        <div class="meta-data">
+                            <a href="#">User: 8.9/10</a>
+                            <a href="#">Role Play Gaming</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Monthly Picks Area End ##### -->
+
+<!-- ##### Video Area Start ##### -->
+<div class="egames-video-area section-padding-100 bg-pattern2">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="egames-nav-btn">
+                    <div class="nav flex-column" id="video-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="video1" data-toggle="pill" href="#video-1" role="tab" aria-controls="video-1" aria-selected="true">
+                            <!-- Single Video Widget -->
+                            <div class="single-video-widget d-flex wow fadeInUp" data-wow-delay="100ms">
+                                <div class="video-thumbnail">
+                                    <img src="{% static 'img/bg-img/60.jpg' %}" alt="">
+                                </div>
+                                <div class="video-text">
+                                    <p class="video-title mb-0">View Anthem Trailer Here</p>
+                                    <span>PC, PS4, XBox One</span>
+                                </div>
+                                <div class="video-rating">6.3/10</div>
+                            </div>
+                        </a>
+
+                        <a class="nav-link" id="video2" data-toggle="pill" href="#video-2" role="tab" aria-controls="video-2" aria-selected="false">
+                            <!-- Single Video Widget -->
+                            <div class="single-video-widget d-flex wow fadeInUp" data-wow-delay="200ms">
+                                <div class="video-thumbnail">
+                                    <img src="{% static 'img/bg-img/51.jpg' %}" alt="">
+                                </div>
+                                <div class="video-text">
+                                    <p class="video-title mb-0">View The Elder Scrolls V：Skyrim Trailer Here</p>
+                                    <span>PC, PS3, PS4, Xbox 360, XBox One, Nintendo Switch</span>
+                                </div>
+                                <div class="video-rating">9.1/10</div>
+                            </div>
+                        </a>
+
+                        <a class="nav-link" id="video3" data-toggle="pill" href="#video-3" role="tab" aria-controls="video-3" aria-selected="false">
+                            <!-- Single Video Widget -->
+                            <div class="single-video-widget d-flex wow fadeInUp" data-wow-delay="300ms">
+                                <div class="video-thumbnail">
+                                    <img src="{% static 'img/bg-img/52.jpg' %}" alt="">
+                                </div>
+                                <div class="video-text">
+                                    <p class="video-title mb-0">View Fallout 4 Trailer Here</p>
+                                    <span>PC, Xbox One, PS4</span>
+                                </div>
+                                <div class="video-rating">8.4/10</div>
+                            </div>
+                        </a>
+
+                        <a class="nav-link" id="video4" data-toggle="pill" href="#video-4" role="tab" aria-controls="video-4" aria-selected="false">
+                            <!-- Single Video Widget -->
+                            <div class="single-video-widget d-flex wow fadeInUp" data-wow-delay="400ms">
+                                <div class="video-thumbnail">
+                                    <img src="{% static 'img/bg-img/53.jpg' %}" alt="">
+                                </div>
+                                <div class="video-text">
+                                    <p class="video-title mb-0">View Rainbow Six Trailer Here</p>
+                                    <span>PS4, XBOX, XBOX 360, XBOX ONE, PC</span>
+                                </div>
+                                <div class="video-rating">8.8/10</div>
+                            </div>
+                        </a>
+
+                        <a class="nav-link" id="video5" data-toggle="pill" href="#video-5" role="tab" aria-controls="video-5" aria-selected="false">
+                            <!-- Single Video Widget -->
+                            <div class="single-video-widget d-flex wow fadeInUp" data-wow-delay="500ms">
+                                <div class="video-thumbnail">
+                                    <img src="{% static 'img/bg-img/54.jpg' %}" alt="">
+                                </div>
+                                <div class="video-text">
+                                    <p class="video-title mb-0">View CS: GO Trailer Here</p>
+                                    <span>PC, PS3, Xbox 360</span>
+                                </div>
+                                <div class="video-rating">9.4/10</div>
+                            </div>
+                        </a>
+
+                        <a class="nav-link" id="video6" data-toggle="pill" href="#video-6" role="tab" aria-controls="video-6" aria-selected="false">
+                            <!-- Single Video Widget -->
+                            <div class="single-video-widget d-flex wow fadeInUp" data-wow-delay="600ms">
+                                <div class="video-thumbnail">
+                                    <img src="{% static 'img/bg-img/55.jpg' %}" alt="">
+                                </div>
+                                <div class="video-text">
+                                    <p class="video-title mb-0">View Assassin's Creed IV：Black Flag Trailer Here</p>
+                                    <span>PC, PS3, PS4, Xbox360, Xbox One, Wii</span>
+                                </div>
+                                <div class="video-rating">8.2/10</div>
+                            </div>
+                        </a>
+
+                        <a class="nav-link" id="video7" data-toggle="pill" href="#video-7" role="tab" aria-controls="video-7" aria-selected="false">
+                            <!-- Single Video Widget -->
+                            <div class="single-video-widget d-flex wow fadeInUp" data-wow-delay="700ms">
+                                <div class="video-thumbnail">
+                                    <img src="{% static 'img/bg-img/56.jpg' %}" alt="">
+                                </div>
+                                <div class="video-text">
+                                    <p class="video-title mb-0">View Tropico 6 Trailer Here</p>
+                                    <span>PC, PS4</span>
+                                </div>
+                                <div class="video-rating">7.8/10</div>
+                            </div>
+                        </a>
+
+                        <a class="nav-link" id="video8" data-toggle="pill" href="#video-8" role="tab" aria-controls="video-8" aria-selected="false">
+                            <!-- Single Video Widget -->
+                            <div class="single-video-widget d-flex wow fadeInUp" data-wow-delay="800ms">
+                                <div class="video-thumbnail">
+                                    <img src="{% static 'img/bg-img/58.jpg' %}" alt="">
+                                </div>
+                                <div class="video-text">
+                                    <p class="video-title mb-0">View Red Dead: RedemptionⅡ Trailer Here</p>
+                                    <span>PS4, Xbox One</span>
+                                </div>
+                                <div class="video-rating">9.4/10</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-8">
+                <div class="tab-content" id="video-tabContent">
+                     <div class="tab-pane fade" id="video-5" role="tabpanel" aria-labelledby="video5">
+                        <div class="video-playground bg-img" style="background-image: url({% static 'img/bg-img/54.jpg' %});">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="{% static 'ITAV\Counter-Strike- Global Offensive Trailer.mp4' %}" class="play-button" controls="controls">
+                                <img src="{% static 'img/core-img/play.png' %}" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade show active" id="video-1" role="tabpanel" aria-labelledby="video1">
+                        <div class="video-playground bg-img" style="background-image: url({% static 'img/bg-img/60.jpg' %});">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="{% static 'ITAV\Conviction – An Anthem Trailer From Neill Blomkamp.mp4' %}" class="play-button" controls="controls">
+             					<img src="{% static 'img/core-img/play.png' %}" alt=""></a >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="video-2" role="tabpanel" aria-labelledby="video2">
+                        <div class="video-playground bg-img" style="background-image: url({% static 'img/bg-img/51.jpg' %});">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="{% static 'ITAV\The Elder Scrolls V- Skyrim - Official Trailer.mp4' %}" class="play-button" controls="controls">
+                                <img src="{% static 'img/core-img/play.png' %}" alt=""></a >
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="video-3" role="tabpanel" aria-labelledby="video3">
+                        <div class="video-playground bg-img" style="background-image: url({% static 'img/bg-img/52.jpg' %});">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="{% static 'ITAV\Fallout 4 - Official Trailer.mp4' %}" class="play-button" controls="controls">
+                                 <img src="{% static 'img/core-img/play.png' %}" alt=""></a >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="video-4" role="tabpanel" aria-labelledby="video4">
+                        <div class="video-playground bg-img" style="background-image: url({% static 'img/bg-img/53.jpg' %});">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="{% static 'ITAV\Inside Rainbow Official Trailer – Tom Clancys Rainbow Six Siege.mp4' %}" class="play-button" controls="controls">
+                                 <img src="{% static 'img/core-img/play.png' %}" alt=""></a >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="video-6" role="tabpanel" aria-labelledby="video6">
+                        <div class="video-playground bg-img" style="background-image: url({% static 'img/bg-img/55.jpg' %});">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="{% static 'ITAV\E3 Cinematic Trailer - Assassins Creed 4 Black Flag [UK].mp4' %}" class="play-button" controls="controls">
+                                <img src="{% static 'img/core-img/play.png' %}" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="video-7" role="tabpanel" aria-labelledby="video7">
+                        <div class="video-playground bg-img" style="background-image: url({% static 'img/bg-img/56.jpg' %});">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="{% static 'ITAV\Tropico 6 - PS4 Reveal Trailer _ E317.mp4' %}" class="play-button" controls="controls">
+                                <img src="{% static 'img/core-img/play.png' %}" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="video-8" role="tabpanel" aria-labelledby="video8">
+                        <div class="video-playground bg-img" style="background-image: url({% static 'img/bg-img/58.jpg' %});">
+                            <!-- Play Button -->
+                            <div class="play-btn">
+                                <a href="{% static 'ITAV\Red Dead Redemption 2 Trailer.mp4' %}" class="play-button" controls="controls">
+                                <img src="{% static 'img/core-img/play.png' %}" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Video Area End ##### -->
+
+<!-- ##### Articles Area Start ##### -->
+<section class="latest-articles-area section-padding-100-0 bg-img bg-pattern bg-fixed" style="background-image: url({% static 'img/bg-img/5.jpg' %});">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="mb-100">
+                    <!-- Title -->
+                    <h2 class="section-title mb-70 wow fadeInUp" data-wow-delay="100ms">Latest News</h2>
+
+                    <!-- *** Single Articles Area *** -->
+                    <div class="single-articles-area style-2 d-flex flex-wrap mb-30 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="article-thumbnail">
+                            <img src="{% static 'img/bg-img/6.jpg' %}" alt="">
+                        </div>
+                        <div class="article-content">
+                            <a href="single-post.html" class="post-title">Sony’s new releases for 2019</a>
+                            <div class="post-meta">
+                                <a href="#" class="post-date">March 1, 2019</a>
+                                <a href="#" class="post-comments">2 Comments</a>
+                            </div>
+                            <p>PS5 release date – when will we see Sony's next console?</p>
+                        </div>
+                    </div>
+
+                    <!-- *** Single Articles Area *** -->
+                    <div class="single-articles-area style-2 d-flex flex-wrap mb-30 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="article-thumbnail">
+                            <img src="{% static 'img/bg-img/7.jpg' %}" alt="">
+                        </div>
+                        <div class="article-content">
+                            <a href="single-post.html" class="post-title">7 Tips to be a better gamer</a>
+                            <div class="post-meta">
+                                <a href="#" class="post-date">Feb 25, 2019</a>
+                                <a href="#" class="post-comments">8 Comments</a>
+                            </div>
+                            <p>In this short article we’ll discuss some of the things that will help you become a better gamer. It doesn’t matter if you’re a console gamer or a desktop gamer. We all want to be better, and here are 7 tips to increase your gameplay!</p>
+                        </div>
+                    </div>
+
+                    <!-- *** Single Articles Area *** -->
+                    <div class="single-articles-area style-2 d-flex flex-wrap mb-30 wow fadeInUp" data-wow-delay="700ms">
+                        <div class="article-thumbnail">
+                            <img src="{% static 'img/bg-img/8.jpg' %}" alt="">
+                        </div>
+                        <div class="article-content">
+                            <a href="single-post.html" class="post-title">How to Choose the Right Game Controller</a>
+                            <div class="post-meta">
+                                <a href="#" class="post-date">Feb 22, 2019</a>
+                                <a href="#" class="post-comments">52 Comments</a>
+                            </div>
+                            <p>You have some computer games and don't know if you should play it with keyboard/gamepad/joystick? This Guide may help you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <!-- Title -->
+                <h2 class="section-title mb-70 wow fadeInUp" data-wow-delay="100ms">This week’s deal</h2>
+
+                <!-- Single Widget Area -->
+                <div class="single-widget-area add-widget wow fadeInUp" data-wow-delay="300ms">
+                    <a href="#"><img src="{% static 'img/bg-img/add.png' %}" alt=""></a>
+                    <!-- Side Img -->
+                    <img src="{% static 'img/bg-img/side-img.png' %}" class="side-img" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Articles Area End ##### -->
+
+ {% endblock %}
+
+
