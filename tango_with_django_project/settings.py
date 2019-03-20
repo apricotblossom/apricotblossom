@@ -147,8 +147,8 @@ MEDIA_URL = '/media/'
 
 STATIC_URL = '/static/'
 
-LOGIN_URL = 'rango/login'
-LOGOUT_URL = 'rango/logout'
+LOGIN_URL = '/rango/login'
+LOGOUT_URL = '/rango/logout'
 LOGIN_REDIRECT_URL = '/rango/'
 SOCIAL_AUTH_TWITTER_KEY = 'nnLIHWKDLekijebB3xDXFKNDw'
 SOCIAL_AUTH_TWITTER_SECRET = 'MjMDbonOPA9bwjESsD4MmlX6aXP4iVFLV6OdwTm1aIQfKVewLj'

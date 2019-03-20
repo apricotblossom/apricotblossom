@@ -9,7 +9,7 @@
                 <!-- Breadcrumb Text -->
                 <div class="col-12">
                     <div class="breadcrumb-text">
-                        <h2>Game Review List</h2>
+                        <h2>Adult Game Review List</h2>
                     </div>
                 </div>
             </div>
@@ -38,14 +38,14 @@
                             <a href="{% url 'show_category' category.slug %}" class="game-title">{{ category.name }}</a>
                             <div class="game-meta">
                                 <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" class="game-date">{{ category.releasedate }}</a>
-                                <a href="#" class="game-comments">4 Comments</a>
+
                             </div>
                             <p>{{ category.introduction }}</p>
 
                             <div class="download-rating-area d-flex align-items-center justify-content-between">
                                 <div class="download-area">
                                     <a href="{{ category.pcurl }}"><img src="{% static 'img/core-img/windows.png' %}" alt=""></a>
-                                    <a href="{{ category.andurl }}"><img src="{% static 'img/core-img/google-play.png' %}" alt=""></a>
+                                    <a href="{{ category.andurl }}"><img src="{% static 'img/core-img/google-play.png' %}" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;
                                     <a href="{{ category.iosurl }}"><img src="{% static 'img/core-img/app-store.png' %}" alt=""></a>
 
                                 </div>

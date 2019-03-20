@@ -9,18 +9,21 @@
                 <!-- Breadcrumb Text -->
                 <div class="col-12">
                     <div class="breadcrumb-text">
-                        <h2>Game Review List3</h2>
+                        <h2>Game Review List 3</h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- ##### Breadcrumb Area End ##### -->
-       <div class="row">
-        <div class="col-md-4 myTest" style="text-align:right"> Type to find categories </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-4 myTest" style="text-align:right">
+           <a href="{% url 'add_category' %}"><button>Add Your Game</button></a>
+        </div>
         <div class="col-md-4 myTest">
             <input class="search-query form-control" type="text"
-            name="suggestion" value="" id="suggestion" />
+            name="suggestion" value="" placeholder="Or type here to find your favorite game" id="suggestion" />
             </div>
             <div class="col-md-4 myTest" id="cats"></div>
         </div>
@@ -53,7 +56,7 @@
                             <a href="{% url 'show_category' category.slug %}" class="game-title">{{ category.name}}</a>
                             <div class="game-meta">
                                 <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" class="game-date">{{ category.releasedate }}</a>
-                                <a href="#" class="game-comments">4 Comments</a>
+
                             </div>
                             <p>{{ category.introduction }}</p>
                              <!-- Download & Rating Area -->

@@ -110,12 +110,7 @@
                     </div>
                     <!-- Top Social Info -->
                     <div class="top-social-info">
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </div>
                 </nav>
             </div>
@@ -129,84 +124,6 @@
 
 <!-- ##### Footer Area Start ##### -->
 <footer class="footer-area">
-    <!-- Main Footer Area -->
-    <div class="main-footer-area section-padding-100-0">
-        <div class="container">
-            <div class="row">
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-footer-widget mb-70 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="widget-title">
-                            <a href="index.html"><img src="{% static 'img/core-img/logo2.png' %}" alt=""></a>
-                        </div>
-                        <div class="widget-content">
-                            <p>ApricotBlossom is one of the most professional game news website. We aim to help players play games with great facility and display all the lastest news about different games. </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-footer-widget mb-70 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="widget-title">
-                            <h4>Game Reviews</h4>
-                        </div>
-                        <div class="widget-content">
-                            <nav>
-                                <ul>
-                                    <li><a href="#">CS: GO</a></li>
-                                    <li><a href="#">Rainbow Six</a></li>
-                                    <li><a href="#">The Elder Scrolls V：Skyrim</a></li>
-                                    <li><a href="#">Tropico6</a></li>
-                                    <li><a href="#">Red Dead Redemption II</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-footer-widget mb-70 wow fadeInUp" data-wow-delay="500ms">
-                        <div class="widget-title">
-                            <h4>Related Links</h4>
-                        </div>
-                        <div class="widget-content">
-                            <nav>
-                                <ul>
-                                    <li><a href="#">Testimanials</a></li>
-                                    <li><a href="#">Reviews</a></li>
-                                    <li><a href="#">New Games</a></li>
-                                    <li><a href="#">Forum</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Footer Widget -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-footer-widget mb-70 wow fadeInUp" data-wow-delay="700ms">
-                        <div class="widget-title">
-                            <h4>What’s new</h4>
-                        </div>
-                        <div class="widget-content">
-                            <nav>
-                                <ul>
-                                    <li><a href="#">Anthem</a></li>
-                                    <li><a href="#">Assassin's Creed IV：Black Flag</a></li>
-                                    <li><a href="#">Diablo3</a></li>
-                                    <li><a href="#">Fallout 4</a></li>
-                                    <li><a href="#">Grand Theft Auto V</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Copywrite Area -->
     <div class="copywrite-content">
@@ -224,9 +141,8 @@
                         <ul>
                             <li><a href="{% url 'index' %}">Home</a></li>
                             <li><a href="{% url 'search' %}">Search</a></li>
-                            <li><a href="post.html">Articles</a></li>
-                            <li><a href="single-game-review.html">Reviews</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{% url 'gamenews' %}">Articles</a></li>
+                            <li><a href="{% url 'gamereview' %}">Reviews</a></li>
                         </ul>
                     </div>
                 </div>

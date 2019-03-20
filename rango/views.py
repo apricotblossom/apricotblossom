@@ -207,19 +207,19 @@ def contact(request):
     return render(request, 'rango/contact.html')
 
 def gamereview(request):
-    category_list = Category.objects.order_by('-likes')[20:24]
+    category_list = Category.objects.order_by('-likes')[12:16]
     context_dict = {'categories': category_list}
     response = render(request,'rango/game-review.html',context=context_dict)
     return response
 
 def gamereview2(request):
-    category_list = Category.objects.order_by('-likes')[16:20]
+    category_list = Category.objects.order_by('-likes')[8:12]
     context_dict = {'categories': category_list}
     response = render(request,'rango/game-review2.html',context=context_dict)
     return response
 
 def gamereview3(request):
-    category_list = Category.objects.order_by('-likes')[12:16]
+    category_list = Category.objects.order_by('-likes')[4:8]
     context_dict = {'categories': category_list}
     response = render(request,'rango/game-review3.html',context=context_dict)
     return response
@@ -229,58 +229,11 @@ def age_check(user):
 
 @user_passes_test(age_check)
 def adultgamereview(request):
-    category_list = Category.objects.order_by('-likes')[8:12]
+    category_list = Category.objects.order_by('-likes')[:4]
     context_dict = {'categories': category_list}
     response = render(request, 'rango/adult-game-review.html', context=context_dict)
     return response
 
-def singlegamereview(request):
-    return render(request, 'rango/single-game-review.html')
-
-def grandtheftautovreview(request):
-    return render(request, 'rango/grandtheftautovreview.html')
-
-def reddeadredemptionⅡreview(request):
-    return render(request, 'rango/reddeadredemptionⅡreview.html')
-
-def monsterhunterworldreview(request):
-    return render(request, 'rango/monsterhunterworldreview.html')
-
-def devilmaycryvreview(request):
-    return render(request, 'rango/devilmaycryvreview.html')
-
-def pokémongoreview(request):
-    return render(request, 'rango/pokémongoreview.html')
-
-def minecraftreview(request):
-    return render(request, 'rango/minecraftreview.html')
-
-def nba2k19review(request):
-    return render(request, 'rango/nba2k19review.html')
-
-def brawlstarsreview(request):
-    return render(request, 'rango/brawlstarsreview.html')
-
-def clashroyalereview(request):
-    return render(request, 'rango/clashroyalereview.html')
-
-def boombeachreview(request):
-    return render(request, 'rango/boombeachreview.html')
-
-def clashofclansreview(request):
-    return render(request, 'rango/clashofclansreview.html')
-
-def negligeelovestoriesreview(request):
-    return render(request, 'rango/negligeelovestoriesreview.html')
-
-def callofdutyblackops4review(request):
-    return render(request, 'rango/callofdutyblackops4review.html')
-
-def theinvisibleguardianreview(request):
-    return render(request, 'rango/theinvisibleguardianreview.html')
-
-def dota2review(request):
-    return render(request, 'rango/dota2review.html')
 
 def gamenews(request):
     return render(request, 'rango/post.html')
@@ -299,10 +252,7 @@ def marionews(request):
 
 @user_passes_test(age_check)
 def adultgamenews(request):
-    category_list = Category.objects.order_by('-likes')[4:8]
-    context_dict = {'categories': category_list}
-    response = render(request, 'rango/adultgamenews.html', context=context_dict)
-    return response
+    return render(request, 'rango/adultgamenews.html')
 
 def senrankaguraburstrenewal(request):
     return render(request, 'rango/senrankaguraburstrenewal.html')
@@ -436,11 +386,6 @@ def track_url(request):
             return HttpResponse("Page id {0} not found".format(page_id))
     print("No page_id in get string")
     return redirect(reverse('index'))
-
-
-def total(self,Page):
-    total = Page.objects.aggregate(Sum('evaluation'))
-    return total
 
 
 

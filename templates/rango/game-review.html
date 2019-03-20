@@ -18,10 +18,12 @@
     <br>
     <br>
     <div class="row">
-        <div class="col-md-4 myTest" style="text-align:right"><font face="Verdana">Type to find categories</font></div>
+        <div class="col-md-4 myTest" style="text-align:right">
+           <a href="{% url 'add_category' %}"><button>Add Your Game</button></a>
+        </div>
         <div class="col-md-4 myTest">
             <input class="search-query form-control" type="text"
-            name="suggestion" value="" id="suggestion" />
+            name="suggestion" value="" placeholder="Or type here to find your favorite game" id="suggestion" />
             </div>
             <div class="col-md-4 myTest" id="cats"></div>
         </div>
@@ -46,18 +48,15 @@
                             <a href="{% url 'show_category' category.slug %}" class="game-title">{{ category.name}}</a>
                             <div class="game-meta">
                                 <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" class="game-date">{{ category.releasedate }}</a>
-                                <a href="#" class="game-comments">4 Comments</a>
+
                             </div>
                             <p>{{ category.introduction }}</p>
-                           <!--   <p><a href="{% url 'theinvisibleguardianreview' %}"><img width="80" height="45" src="{% static 'img/core-img/more_m.jpg' %}" align="right" alt=""></a></p>
-                            Download & Rating Area -->
                             <div class="download-rating-area d-flex align-items-center justify-content-between">
                                 <div class="download-area">
                                     <a href="{{ category.pcurl }}"><img src="{% static 'img/core-img/windows.png' %}" alt=""></a>
                                     <a href="{{ category.andurl }}"><img src="{% static 'img/core-img/google-play.png' %}" alt=""></a>
                                      &nbsp;&nbsp;&nbsp;&nbsp;
                                     <a href="{{ category.iosurl }}"><img src="{% static 'img/core-img/app-store.png' %}" alt=""></a>
-                                  
                                 </div>
                                 <div class="rating-area text-center">
                                     <h3>8.6</h3>
