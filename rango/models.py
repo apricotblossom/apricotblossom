@@ -1,13 +1,14 @@
 from django.db import models
 from django.template.defaultfilters import slugify
 from django.contrib.auth.models import User
+from django.utils import timezone
 
 # Create your models here.
 class Category(models.Model):
     yturl = models.CharField(max_length=128)
     cats = models.CharField(max_length=128)
     name = models.CharField(max_length=128, unique=True)
-    releasedate = models.DateField(blank=True)
+    releasedate = models.DateField(default=timezone.now)
     introduction = models.CharField(max_length=2048)
     review = models.CharField(max_length=65536)
     iosurl = models.URLField()
