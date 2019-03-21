@@ -164,7 +164,7 @@ def populate():
                                     "views": 0,
                                     "likes": 12,
                                   },
-            "Red Dead: Redemption\u2161":{"yturl": "/static/ITAV/Red Dead Redemption 2.mp4",
+            "Red Dead: Redemption\u2161":{"yturl": "/static/ITAV/RedDeadRedemption2Trailer.mp4",
                                                     "cats": "Adventure",
                                                     "releasedate": "2018-10-26",
                                                     "introduction": "Red Dead Redemption 2 stands shoulder-to-shoulder with Grand Theft Auto V as one of the greatest games of the modern age. It\u2019s a gorgeous depiction of an ugly period that\u2019s patient, polished, and a huge amount of fun to play, and it\u2019s combined with Rockstar\u2019s best storytelling to date. Even after finishing the lengthy story I can\u2019t wait to go back and play more. This is a game of rare quality; a meticulously polished open world ode to the outlaw era. Looking for one of this generation\u2019s very best single-player action experiences? Here\u2019s your huckleberry.",
